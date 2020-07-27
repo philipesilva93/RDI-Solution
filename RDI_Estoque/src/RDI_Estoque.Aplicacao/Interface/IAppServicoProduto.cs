@@ -3,7 +3,7 @@ using RDI_Estoque.Dominio.Entidades;
 
 namespace RDI_Estoque.Aplicacao.Interface
 {
-    public interface IAppServicoProduto : IAppServicoPadrao<Produto, ProdutoVM>
+    public interface IAppServicoProduto : IAppServicoPadrao<Produto>
     {
     }
 }

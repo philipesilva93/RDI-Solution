@@ -6,7 +6,7 @@ using RDI_Estoque.Dominio.Interfaces.Servico;
 
 namespace RDI_Estoque.Aplicacao.Servico
 {
-    public class AppServicoNotaFiscal : AppServicoPadrao<NotaFiscal, NotaFiscalVM>, IAppServicoNotaFiscal
+    public class AppServicoNotaFiscal : AppServicoPadrao<NotaFiscal>, IAppServicoNotaFiscal
     {
         public AppServicoNotaFiscal(IMapper iMapper, IServicoNotaFiscal servico) : base(servico, iMapper)
         {

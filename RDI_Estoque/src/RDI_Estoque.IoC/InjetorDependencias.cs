@@ -13,7 +13,7 @@ namespace RDI_Estoque.IoC
         public static void Registrar(IServiceCollection svcCollection)
         {
             //Aplicação
-            svcCollection.AddScoped(typeof(IAppServicoPadrao<,>), typeof(AppServicoPadrao<,>));
+            svcCollection.AddScoped(typeof(IAppServicoPadrao<>), typeof(AppServicoPadrao<>));
             svcCollection.AddScoped<IAppServicoProduto, AppServicoProduto>();
             svcCollection.AddScoped<IAppServicoNotaFiscal, AppServicoNotaFiscal>();
 

@@ -6,9 +6,8 @@ using System.Collections.Generic;
 
 namespace RDI_Estoque.Aplicacao.Servico
 {
-    public class AppServicoPadrao<TEntity, TEntityVM> : IDisposable, IAppServicoPadrao<TEntity, TEntityVM>
+    public class AppServicoPadrao<TEntity> : IDisposable, IAppServicoPadrao<TEntity>
            where TEntity : class
-           where TEntityVM : class
     {
         private readonly IServicoPadrao<TEntity> _servicoPadrao;
         protected readonly IMapper _iMapper;
@@ -17,19 +16,19 @@ namespace RDI_Estoque.Aplicacao.Servico
             _iMapper = iMapper;
             _servicoPadrao = servicoPadrao;
         }
-        public void Adicionar(TEntityVM obj)
+        public void Adicionar(TEntity obj)
         {
-            _servicoPadrao.Adicionar(_iMapper.Map<TEntity>(obj));
+            _servicoPadrao.Adicionar(obj);
         }
 
-        public void Atualizar(TEntityVM obj)
+        public void Atualizar(TEntity obj)
         {
-            _servicoPadrao.Atualizar(_iMapper.Map<TEntity>(obj));
+            _servicoPadrao.Atualizar(obj);
         }
 
-        public TEntityVM BuscarPorID(int id)
+        public TEntity BuscarPorID(int id)
         {
-            return _iMapper.Map<TEntityVM>(_servicoPadrao.BuscarPorID(id.ToString()));
+            return _servicoPadrao.BuscarPorID(id.ToString());
         }
 
         public void Dispose()
@@ -37,14 +36,14 @@ namespace RDI_Estoque.Aplicacao.Servico
             throw new NotImplementedException();
         }
 
-        public void Excluir(TEntityVM obj)
+        public void Excluir(TEntity obj)
         {
-            _servicoPadrao.Excluir(_iMapper.Map<TEntity>(obj));
+            _servicoPadrao.Excluir(obj);
         }
 
-        public IEnumerable<TEntityVM> RecuperarTodos()
+        public IEnumerable<TEntity> RecuperarTodos()
         {
-            var x = _iMapper.Map<IEnumerable<TEntityVM>>(_servicoPadrao.RecuperarTodos());
+            var x = _servicoPadrao.RecuperarTodos();
             return x;
         }
     }

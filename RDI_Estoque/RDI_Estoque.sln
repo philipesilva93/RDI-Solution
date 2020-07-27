@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDI_Estoque.Aplicacao", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDI_Estoque.IoC", "src\RDI_Estoque.IoC\RDI_Estoque.IoC.csproj", "{0AC80A63-67B4-49B6-B320-47F936D98462}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDI_Estoque.Web", "src\RDI_Estoque.Web\RDI_Estoque.Web.csproj", "{5D621F25-D2DE-4900-A17A-36E03576871B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0AC80A63-67B4-49B6-B320-47F936D98462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AC80A63-67B4-49B6-B320-47F936D98462}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AC80A63-67B4-49B6-B320-47F936D98462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D621F25-D2DE-4900-A17A-36E03576871B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D621F25-D2DE-4900-A17A-36E03576871B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D621F25-D2DE-4900-A17A-36E03576871B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D621F25-D2DE-4900-A17A-36E03576871B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{6ADCF93B-6D41-4F9E-AD48-05DC737EA00A} = {98D1E885-EAB0-4D84-8726-B49A64D9AC09}
 		{A6B7403E-94C6-4684-8AA5-30B74403EECB} = {C2057B89-E611-4ABE-A789-0F1E67FBA744}
 		{0AC80A63-67B4-49B6-B320-47F936D98462} = {17C86C2E-7DD4-4C14-AB1E-6945C7B36BE7}
+		{5D621F25-D2DE-4900-A17A-36E03576871B} = {201A50E3-2AE1-4C97-99F5-59FAAC71D3F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {953B6169-972C-48FB-AA2A-A448705E81BD}

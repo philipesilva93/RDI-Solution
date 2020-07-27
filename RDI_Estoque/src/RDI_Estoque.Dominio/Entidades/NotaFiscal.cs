@@ -16,7 +16,7 @@ namespace RDI_Estoque.Dominio.Entidades
         public DateTime DataEmissao { get; set; }
         public DateTime DataSaida { get; set; }
         public string IdUsuarioCadastro { get; set; }
-        public int IdProduto { get; set; }
+        public string IdProduto { get; set; }
         public Produto Produto { get; set; }
 
     }

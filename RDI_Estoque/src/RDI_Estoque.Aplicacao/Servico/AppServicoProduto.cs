@@ -6,7 +6,7 @@ using RDI_Estoque.Dominio.Interfaces.Servico;
 
 namespace RDI_Estoque.Aplicacao.Servico
 {
-    public class AppServicoProduto : AppServicoPadrao<Produto, ProdutoVM>, IAppServicoProduto
+    public class AppServicoProduto : AppServicoPadrao<Produto>, IAppServicoProduto
     {
         public AppServicoProduto(IMapper iMapper, IServicoProduto servico) : base(servico, iMapper)
         {

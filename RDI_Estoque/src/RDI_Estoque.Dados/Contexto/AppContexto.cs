@@ -7,6 +7,7 @@ namespace RDI_Estoque.Dados.Contexto
 {
     public class AppContexto : IdentityDbContext
     {
+        public AppContexto() { }
         public AppContexto(DbContextOptions<AppContexto> opt) : base(opt) { Database.EnsureCreated(); }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

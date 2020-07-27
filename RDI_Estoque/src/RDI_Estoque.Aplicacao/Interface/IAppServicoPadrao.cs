@@ -2,15 +2,14 @@
 
 namespace RDI_Estoque.Aplicacao.Interface
 {
-    public interface IAppServicoPadrao<TEntity, TEntityVM>
+    public interface IAppServicoPadrao<TEntity>
         where TEntity : class
-        where TEntityVM : class
     {
-        void Adicionar(TEntityVM obj);
-        TEntityVM BuscarPorID(int id);
-        IEnumerable<TEntityVM> RecuperarTodos();
-        void Atualizar(TEntityVM obj);
-        void Excluir(TEntityVM obj);
+        void Adicionar(TEntity obj);
+        TEntity BuscarPorID(int id);
+        IEnumerable<TEntity> RecuperarTodos();
+        void Atualizar(TEntity obj);
+        void Excluir(TEntity obj);
         void Dispose();
     }
 }

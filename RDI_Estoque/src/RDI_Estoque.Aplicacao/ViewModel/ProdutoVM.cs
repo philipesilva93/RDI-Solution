@@ -5,6 +5,8 @@ namespace RDI_Estoque.Aplicacao.ViewModel
 {
     public class ProdutoVM
     {
+        public string Id { get; set; }
+        public string Nome { get; set; }
         public string IDUsuarioCadastro { get; set; }
         public string Marca { get; set; }
         public DateTime DataCadastro { get; set; }
