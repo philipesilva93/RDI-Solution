@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RDI_Estoque.Aplicacao\RDI_Estoque.Aplicacao.csproj" />
+    <ProjectReference Include="..\RDI_Estoque.Dados\RDI_Estoque.Dados.csproj" />
+    <ProjectReference Include="..\RDI_Estoque.Dominio\RDI_Estoque.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>
